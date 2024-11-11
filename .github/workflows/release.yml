@@ -75,7 +75,7 @@ jobs:
 
       - name: Install Dependencies for RPM
         run: |
-          sudo dnf install -y rpm-build createrepo libgtk-3-dev libxdo libappindicator-gtk3 libxcb libXrandr dbus
+          sudo dnf install -y rpm-build createrepo gtk3-devel libxdo libappindicator-gtk3 libxcb libXrandr dbus
 
       - name: Setup Rust
         uses: actions-rust-lang/setup-rust-toolchain@v1
